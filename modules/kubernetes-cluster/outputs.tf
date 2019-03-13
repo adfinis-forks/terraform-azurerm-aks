@@ -33,3 +33,11 @@ output "raw_kube_config" {
 output "http_application_routing_zone_name" {
   value = "${azurerm_kubernetes_cluster.main.addon_profile.0.http_application_routing.0.http_application_routing_zone_name}"
 }
+
+output "node_resource_group" {
+  value = "${azurerm_kubernetes_cluster.main.node_resource_group}"
+}
+
+output "location" {
+  value = "${azurerm_kubernetes_cluster.main.location}"
+}
