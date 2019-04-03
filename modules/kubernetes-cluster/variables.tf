@@ -38,7 +38,6 @@ variable "agents_size" {
 
 variable "agents_disk_size" {
   description = "Disk size for each Agent"
-  default     = 50
 }
 
 variable "vnet_subnet_id" {
