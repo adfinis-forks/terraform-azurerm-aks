@@ -10,6 +10,10 @@ output "cluster_ca_certificate" {
   value = "${module.kubernetes.cluster_ca_certificate}"
 }
 
+output "kube_config_raw" {
+  value = "${module.kubernetes.raw_kube_config}"
+}
+
 output "host" {
   value = "${module.kubernetes.host}"
 }
