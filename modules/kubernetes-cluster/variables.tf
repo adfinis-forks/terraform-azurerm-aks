@@ -15,9 +15,10 @@ variable "location" {
 }
 
 variable "tags" {
-  default     = {}
+  default = {
+  }
   description = "Any tags that should be present on the Virtual Network resources"
-  type        = "map"
+  type        = map(string)
 }
 
 variable "admin_username" {
@@ -61,3 +62,4 @@ variable "enable_http_application_routing" {
   description = "Enable HTTP Application Routing Addon (forces recreation)"
   default     = false
 }
+
